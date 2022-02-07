@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacay Store / Wishlist</title>
+    <link href="https://vacay-ui.netlify.app/components/vacay.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="grid-container-wishlist">
+    <header class="header box-shadow">
+        <h1 class="logo">vacay</h1>
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search">
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#" class="btn btn-primary">Login</a></li>
+                <li>
+                    <div class="badge-wrapper">
+                        <a href="#"><i class="btn-icon far fa-heart"></i></a>
+                        <span class="badge badge-number">5</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-secondary-icon-text-no-border">
+                        <div class="badge-wrapper">
+                            <i class="btn-icon fas fa-shopping-cart"></i>
+                            <span class="badge badge-number">5</span>
+                        </div>
+                        Cart
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wishlist-card-wrapper">
+        <h1>My Wishlist</h1>
+        <div class="card card-horizontal card-horizontal-lg">
+            <img src="/assets/camera.jpg" class="img-responsive" alt="camera">
+            <div class="card-info">
+                <h5 class="card-title">Camera</h5>
+                <span class="card-price">Rs. 20,000</span>
+                <span class="card-discount">50% off</span>
+            </div>
+            <div class="card-btn-wrapper">
+                <a href="#" class="btn btn-primary">Move to cart</a>
+                <a href="#" class="btn btn-secondary-outline">Remove</a>
+            </div>
+        </div>
+        <div class="card card-horizontal card-horizontal-lg">
+            <img src="/assets/camera1.jpg" class="img-responsive" alt="camera">
+            <div class="card-info">
+                <h5 class="card-title">Nikon DSLR Camera</h5>
+                <span class="card-price">Rs. 30,000</span>
+                <span class="card-discount">10% off</span>
+            </div>
+            <div class="card-btn-wrapper">
+                <a href="#" class="btn btn-primary">Move to cart</a>
+                <a href="#" class="btn btn-secondary-outline">Remove</a>
+            </div>
+        </div>
+        <div class="card card-horizontal card-horizontal-lg">
+            <img src="/assets/suitcase.jpg" class="img-responsive" alt="camera">
+            <div class="card-info">
+                <h5 class="card-title">Travel Suitcase</h5>
+                <span class="card-price">Rs. 10,000</span>
+                <span class="card-discount">30% off</span>
+            </div>
+            <div class="card-btn-wrapper">
+                <a href="#" class="btn btn-primary">Move to cart</a>
+                <a href="#" class="btn btn-secondary-outline">Remove</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
