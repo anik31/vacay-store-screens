@@ -1,0 +1,16 @@
+.grid-container-login{
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 30rem 1fr;
+    grid-template-areas:
+    "header header header"
+    "....   form    ....";
+}
+
+.grid-container-login .header{
+    grid-area: header;
+}
+
+.grid-container-login .form{
+    grid-area: form;
+}
