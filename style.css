@@ -43,3 +43,48 @@
 .wishlist-card-wrapper h1{
     text-align: center;
 }
+
+/* || cart */
+
+.page-title{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.grid-container-cart{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 20rem 1fr;
+    grid-template-areas: 
+    "....   cards  aside   ....";
+
+}
+
+.card-wrapper-cart{
+    grid-area: cards;
+}
+
+.price-card{
+    padding: 2rem;
+    height: fit-content;
+    border-radius: var(--border-radius);
+    grid-area: aside;
+}
+
+.price-card hr, .price-card .btn{
+    margin: 0.8rem 0;
+}
+
+.price-card li, .total-amount{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.total-amount{
+    font-weight: 700;
+}
+
+.card-wrapper-cart .card{
+    margin-bottom: 2rem;
+}
