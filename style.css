@@ -125,3 +125,14 @@
     gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
 }
+
+.product-page-container .page-title{
+    text-align: left;
+    margin-left: 2rem;
+    margin-bottom: 0;
+}
+
+.product-page-container .page-title span{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
