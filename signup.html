@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacay Store / Signup</title>
+    <link href="https://vacay-ui.netlify.app/components/vacay.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="grid-container-login">
+    <header class="header box-shadow">
+        <h1 class="logo">vacay</h1>
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search">
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#" class="btn btn-primary">Login</a></li>
+                <li>
+                    <div class="badge-wrapper">
+                        <a href="#"><i class="btn-icon far fa-heart"></i></a>
+                        <span class="badge badge-number">5</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-secondary-icon-text-no-border">
+                        <div class="badge-wrapper">
+                            <i class="btn-icon fas fa-shopping-cart"></i>
+                            <span class="badge badge-number">5</span>
+                        </div>
+                        Cart
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <form action="post" class="form box-shadow">
+        <h3>Signup</h3>
+        <div class="input input-text">
+            <label for="">Email address</label>
+            <input type="text" placeholder="example@gmail.com">
+        </div>
+        <div class="input input-text">
+            <label for="">Password</label>
+            <input type="text" placeholder="************">
+        </div>
+        <div class="input input-checkbox-radio">
+            <input type="checkbox">
+            <label for="">I accept all terms & conditions</label>
+        </div>
+        <a href="#" class="btn btn-primary">Create New Account</a>
+        <a href="/login.html" class="btn btn-secondary-icon-text-no-border">Already have an account <i class="fas fa-chevron-right"></i></a>
+    </form>
+</body>
+</html>
