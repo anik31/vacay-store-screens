@@ -1,8 +1,7 @@
 /* || colors */
 
 :root{
-    --complementary-color: #ef4c00;
-    --primary-color-dark: #002E70;
+    --landing-text-color: #002E70;
 }
 
 /* || Login */
@@ -22,6 +21,7 @@
 
 .grid-container-login .form{
     grid-area: form;
+    margin-bottom: 3rem;
 }
 
 /* || wishlist */
@@ -47,7 +47,7 @@
     margin: 2rem 0;
 }
 
-.wishlist-card-wrapper h1{
+.wishlist-card-wrapper h2{
     text-align: center;
 }
 
@@ -188,7 +188,7 @@
 .hero-content h3{
     font-size: 4rem;
     font-weight: 400;
-    color: var(--primary-color-dark);
+    color: var(--landing-text-color);
 }
 
 .hero-content .btn{
@@ -212,7 +212,7 @@
     font-weight: 300;
     width: fit-content;
     position: relative;
-    color: var(--primary-color-dark);
+    color: var(--landing-text-color);
 }
 
 .categories-container{
