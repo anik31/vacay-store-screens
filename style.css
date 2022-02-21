@@ -4,51 +4,37 @@
     --landing-text-color: #002E70;
 }
 
+/* || general */
+
+html{
+    color: var(--text-color);
+}
+
 /* || Login */
 
 .grid-container-login{
     display: grid;
     gap: 3rem;
-    grid-template-columns: 1fr 30rem 1fr;
-    grid-template-areas:
-    "header header header"
-    "....   form    ....";
-}
-
-.grid-container-login .header{
-    grid-area: header;
+    grid-template-columns: 1fr;
+    justify-items: center;
 }
 
 .grid-container-login .form{
-    grid-area: form;
     margin-bottom: 3rem;
 }
 
 /* || wishlist */
 
-.grid-container-wishlist{
+.wishlist-card-wrapper{
     display: grid;
     gap: 2rem;
-    grid-template-columns: 1fr 60rem 1fr;
-    grid-template-areas: 
-    "header header header"
-    "....   wishlist    ....";
-}
-
-.grid-container-wishlist .header{
-    grid-area: header;
-}
-
-.grid-container-wishlist .wishlist-card-wrapper{
-    grid-area: wishlist;
-}
-
-.wishlist-card-wrapper .card{
+    grid-template-columns: 1fr;    
+    justify-items: center;
     margin: 2rem 0;
 }
 
-.wishlist-card-wrapper h2{
-    text-align: center;
+.wishlist-card-wrapper .card{
+    width: 70vw;
 }
 
 /* || cart */
@@ -60,10 +46,11 @@
 
 .grid-container-cart{
     display: grid;
-    gap: 2rem;
-    grid-template-columns: 1fr 1fr 20rem 1fr;
-    grid-template-areas: 
-    "....   cards  aside   ....";
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "cards  price";
+    justify-items: center;
+    margin: 0 8rem;
 
 }
 
@@ -75,7 +62,7 @@
     padding: 2rem;
     height: fit-content;
     border-radius: var(--border-radius);
-    grid-area: aside;
+    grid-area: price;
 }
 
 .price-card hr, .price-card .btn{
@@ -133,6 +120,10 @@
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
 }
 
+.product-cards-container:nth-child(n){
+    justify-items: center;
+}
+
 .product-page-container .page-title{
     text-align: left;
     margin-left: 2rem;
@@ -147,7 +138,7 @@
 /* || landing */
 
 .landing{
-    margin: 1rem 3rem;
+    margin: 1rem;
 }
 
 .landing section{
@@ -219,11 +210,10 @@
     margin-top: 2rem;
     display: grid;
     gap: 2rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
 
 .categories-container:nth-child(n){
-    align-items: center;
     justify-items: center;
 }
 
@@ -240,4 +230,63 @@
     border-radius: 50%;
     width: 20rem;
     height: 20rem;
+}
+
+/* || media queries */
+
+@media only screen and (max-width:1280px){
+    .grid-container-cart{
+        margin: 0 1rem;
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .grid-container-cart{
+        margin: 0 0.5rem;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .grid-container-cart{
+        margin: 0 0.5rem;
+    }
+}
+
+@media only screen and (max-width:640px){
+    .filter{
+        display: none;
+    }
+
+    .product-page-container{
+        grid-template-columns: 1fr;
+    }
+
+    .wishlist-card-wrapper .card{
+        width: 90vw;
+    }
+
+    .grid-container-cart{
+        margin: 0 0.5rem;
+    }
+    
+    .hero-content h3{
+        font-size: 3.5rem;
+    }
+    
+    .landing{
+        margin: 0.5rem;
+    }
+}
+
+@media only screen and (max-width:480px){    
+    .grid-container-cart{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "cards" 
+        "price";
+    }
+    
+    .hero-content h3{
+        font-size: 3rem;
+    }
 }
