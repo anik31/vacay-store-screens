@@ -10,7 +10,18 @@
 </head>
 <body>
     <header class="header box-shadow">
-        <h2 class="logo">vacay</h2>
+        <div class="hamburger-logo-wrapper">
+            <button><i class="fas fa-bars"></i></button>
+            <h2 class="logo">vacay</h2>
+        </div>
+        <nav class="hamburger-menu">
+            <ul>
+                <li><button><i class="fas fa-times"></i></button></li>
+                <li><a href="/pages/login.html" class="btn btn-secondary-link">Login</a></li>
+                <li><a href="/pages/wishlist.html" class="btn btn-secondary-link">Wishlist</a></li>
+                <li><a href="/pages/cart.html" class="btn btn-secondary-link">Cart</a></li>
+            </ul>
+        </nav>
         <nav class="navigation">
             <ul>
                 <li><a href="/index.html" class="btn btn-secondary-link">Home</a></li>
@@ -21,14 +32,12 @@
             <i class="fas fa-search"></i>
             <input type="text" placeholder="Search">
         </div>
-        <nav class="navigation">
+        <nav class="navigation nav-hide">
             <ul>
                 <li><a href="/pages/login.html" class="btn btn-primary">Login</a></li>
-                <li>
-                    <div class="badge-wrapper">
-                        <a href="/pages/wishlist.html"><i class="btn-icon far fa-heart"></i></a>
-                        <span class="badge badge-number">5</span>
-                    </div>
+                <li class="badge-wrapper">
+                    <a href="/pages/wishlist.html"><i class="btn-icon far fa-heart"></i></a>
+                    <span class="badge badge-number">5</span>
                 </li>
                 <li>
                     <a href="/pages/cart.html" class="btn btn-secondary-icon-text-no-border">
@@ -42,6 +51,7 @@
             </ul>
         </nav>
     </header>
+
     <div class="product-page-container">
     <aside class="filter">
             <div class="filter-header">
@@ -171,5 +181,6 @@
         </div>
     </main>
 </div>
+<script src="/script.js"></script>
 </body>
 </html>
